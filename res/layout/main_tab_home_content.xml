@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-    <!--
-         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tab_home"
-        android:textSize="50sp" />
-    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#42bd56"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="#318e40"
+            android:gravity="center_vertical"
+            android:hint="        影视、图书、唱片、小事等"
+            android:textColor="#83bb8c"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/a1" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/a1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="热门小时话题"
+        android:textColor="#88000000"
+        android:textSize="18sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_home"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="60sp"
-         />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60sp" />
 
-</RelativeLayout>
+</LinearLayout>

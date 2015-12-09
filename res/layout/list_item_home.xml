@@ -1,134 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="300dp"
     android:orientation="vertical" >
 
-    <!-- 第一行 -->
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginLeft="45dp"
+        android:text="半世"
+        android:textColor="#88000000"
+        android:textSize="15dp" />
+
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginRight="20dp"
+        android:text="2小时前"
+        android:textColor="#88000000"
+        android:textSize="15dp" />
 
     <RelativeLayout
+        android:id="@+id/yanlun"
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_alignLeft="@id/iv_head"
+        android:layout_below="@id/iv_head" >
 
-        <ImageView
-            android:id="@+id/iv_head"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher" />
+        <!-- 说说 -->
 
         <TextView
-            android:id="@+id/tv_fm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:text="some info"
-            android:textColor="#88000000"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/tv_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:text="some info"
-            android:textColor="#88000000"
-            android:textSize="10dp" />
-    </RelativeLayout>
-    <!-- 第二行 -->
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="110dp" >
-
-        <TextView
+            android:id="@+id/tv_ss"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:ellipsize="end"
-            android:text="@string/test"
+            android:layout_alignLeft="@id/iv_head"
+            android:layout_marginTop="10dp"
+            android:text="早饭就到了附近多了早饭就到了附近多了早饭就到了附近多了早饭就到了附近多了"
             android:textColor="#000000"
             android:textSize="15dp" />
 
+                <!-- 图片 -->
+
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/iv_show"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/ic_launcher" />
-    </RelativeLayout>
-
-    <!-- 第三行 -->
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="100dp" >
-
-        <TextView
-            android:id="@+id/pl1"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="最近距离拍摄,捕获了这"
-            android:textColor="#88000000"
-            android:textSize="12dp" />
-
-        <TextView
-            android:id="@+id/pl2"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pl1"
-            android:layout_marginLeft="5dp"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="《新视野》号最近对遥远的柯伊柏带天体"
-            android:textColor="#88000000"
-            android:textSize="12dp" />
-
-        <TextView
-            android:id="@+id/frag"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pl2"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="12dp"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="来自小事："
-            android:textColor="#88000000"
-            android:textSize="12dp" />
-
-        <TextView
-            android:id="@+id/amount"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/frag"
+android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:text="1" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/a5" />
+        
+        <!-- 评论 -->
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignTop="@+id/amount"
-            android:layout_toLeftOf="@+id/amount"
-            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/tv_pl1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_head"
+            android:layout_below="@id/tv_ss"
+            android:text="some "
+            android:textColor="#88000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_pl2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_head"
+            android:layout_below="@id/tv_pl1"
+            android:text="somedssss是对方在身上的发生 "
+            android:textColor="#88000000"
+            android:textSize="15dp" />
+
 
     </RelativeLayout>
+
+    <!-- 来自小事 android:layout_marginTop="150dp" -->
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_head"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/yanlun"
+        android:layout_marginBottom="30dp"
+        android:text="来自小事："
+        android:textColor="#88000000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_head"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/tv_label"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="70dp"
+        android:text="画画"
+        android:textColor="#88000000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_label"
+        android:layout_marginRight="20dp"
+        android:text="1"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iv_sign"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@id/tv_amount"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_amount"
+        android:layout_marginRight="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 底部横线 -->
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.2dip"
+        android:layout_height="0.1px"
+        android:paddingBottom="10dip"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
         android:background="#88000000" />
 
-</LinearLayout>
+</RelativeLayout>

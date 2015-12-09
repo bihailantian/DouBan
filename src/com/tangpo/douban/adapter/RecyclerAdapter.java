@@ -24,7 +24,7 @@ public class RecyclerAdapter extends Adapter<RecyclerAdapter.ViewHolder> {
 		ViewHolder holder = new ViewHolder(view);
 
 		holder.mImageView = (ImageView) view.findViewById(R.id.iv_head);
-		holder.mTextView = (TextView) view.findViewById(R.id.tv_fm);
+		holder.mTextView = (TextView) view.findViewById(R.id.tv_amount);
 		return holder;
 	}
 

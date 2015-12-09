@@ -11,6 +11,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Scroller;
 import android.widget.TabHost;
 import android.widget.TabWidget;
@@ -36,6 +37,8 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        
        
         mViewPager = (MyViewPager) findViewById(R.id.pager);
         mTabHost = (TabHost) findViewById(android.R.id.tabhost);

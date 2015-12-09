@@ -9,4 +9,17 @@
     <string name="tab_profile">我的</string>
     <string name="test">《新视野》号最近对遥远的柯伊柏带天体"1994 JR1"进行了史上最近距离拍摄,捕获了这个距太阳约53亿千米、直径约150千米的神秘古老天体的图像。这次</string>
 
+    <string-array name="plants_array">
+        <item>全部</item>
+        <item>电影/电视</item>
+        <item>图书</item>
+        <item>唱片</item>
+        <item>小事</item>
+        <item>用户</item>
+        <item>小组</item>
+        <item>群聊</item>
+        <item>游戏/应用</item>
+        <item>活动</item>
+    </string-array>
+
 </resources>
