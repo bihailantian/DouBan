@@ -1,0 +1,37 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_tab_control"
+            android:divider="#00000000"
+            android:minHeight="90dip"
+            android:tabStripEnabled="false" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <com.tangpo.douban.widget.MyViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:descendantFocusability="afterDescendants" />
+    </RelativeLayout>
+
+</TabHost>

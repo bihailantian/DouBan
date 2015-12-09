@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DouBan</string>
+    <string name="tab_home">主页</string>
+    <string name="tab_feed">精选</string>
+    <string name="tab_subject">书影音</string>
+    <string name="tab_quanzi">圈子</string>
+    <string name="tab_profile">我的</string>
+    <string name="test">《新视野》号最近对遥远的柯伊柏带天体"1994 JR1"进行了史上最近距离拍摄,捕获了这个距太阳约53亿千米、直径约150千米的神秘古老天体的图像。这次</string>
+
+</resources>

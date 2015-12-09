@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 第一行 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_fm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="some info"
+            android:textColor="#88000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="some info"
+            android:textColor="#88000000"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <!-- 第二行 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp" >
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:text="@string/test"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <!-- 第三行 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:id="@+id/pl1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="最近距离拍摄,捕获了这"
+            android:textColor="#88000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/pl2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pl1"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="《新视野》号最近对遥远的柯伊柏带天体"
+            android:textColor="#88000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/frag"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pl2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="来自小事："
+            android:textColor="#88000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/frag"
+            android:layout_marginRight="20dp"
+            android:text="1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/amount"
+            android:layout_toLeftOf="@+id/amount"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:layout_alignParentBottom="true"
+        android:background="#88000000" />
+
+</LinearLayout>
