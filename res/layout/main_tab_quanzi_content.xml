@@ -4,9 +4,45 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/quanzi"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
         android:text="@string/tab_quanzi"
-        android:textSize="50sp" />
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/quanzi"
+        android:background="#88000000" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/category"
+        android:layout_marginBottom="60dp"
+        android:background="#f2f1ee" >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="刷小组，聊剧情，发广播\n总有豆友常伴左右" />
+
+        <Button
+            android:background="#42bd56"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="40dp"
+            android:text="登录" />
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="300dp"
-    android:orientation="vertical" >
+   >
 
     <!-- 头像 -->
 
@@ -148,9 +148,9 @@ android:layout_marginTop="10dp"
     <View
         android:layout_width="match_parent"
         android:layout_height="0.1px"
-        android:paddingBottom="10dip"
+        android:layout_marginTop="10dip"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+    
         android:background="#88000000" />
 
 </RelativeLayout>

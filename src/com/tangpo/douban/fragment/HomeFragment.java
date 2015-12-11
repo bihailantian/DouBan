@@ -30,7 +30,7 @@ public class HomeFragment extends BaseFragment {
 
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getActivity(), "成功了", 1).show();
+//				Toast.makeText(getActivity(), "成功了", 1).show();
 
 				Intent intent = new Intent();
 				intent.setClass(getActivity(), SearchActivity.class);
